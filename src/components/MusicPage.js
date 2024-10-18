@@ -24,7 +24,7 @@ function MusicPage() {
 
   return (
     <div className="App">
-      <h1>Some of My Favorite Tracks</h1>
+      <h1>Some of My Favorite Tracks!</h1>
       {error && <p>{error}</p>} {/* Display error message if it exists */}
       {songs.length > 0 ? (
         songs.map((song, index) => (
