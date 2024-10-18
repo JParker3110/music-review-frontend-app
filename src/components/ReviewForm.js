@@ -48,6 +48,7 @@ const ReviewForm = () => {
         />
         <button type="submit">Submit Review</button>
       </form>
+      <div className="navigation-buttons"></div>
       <Link href="/">Back to Home</Link> {/* Add Back to Home link */}
       <Link href="/music">Back to Music</Link> {/* Add Back to Music link */}
     </div>

@@ -16,10 +16,13 @@ const Song = ({ link, title }) => {
 
   return (
     <div onClick={handleClick} style={{ cursor: 'pointer' }}>
-      <Spotify link={link} />
-      <p>{title}</p>
-      <StarRating rating={rating} onRatingChange={setRating} />
+    <Spotify link={link} />
+    <p style={{ display: 'inline-block' }}>{title}</p>
+    <div className="star-rating">
+        <StarRating rating={rating} onRatingChange={setRating} />
     </div>
+</div>
+
   );
 };
 
