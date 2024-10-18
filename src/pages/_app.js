@@ -7,8 +7,11 @@ function MyApp({ Component, pageProps }) {
         <header className="App-header">
           <h1>Niecey Music Review App</h1>
           <p>Listen to some of my favorite songs, rate and then share a review!</p>
-          <Link href="/reviews">View Reviews</Link>
-          <Link href="/">Home</Link> {/* Add Home link */}
+          <div className="navigation-buttons">
+                    <Link href="/">Home</Link>
+                    <Link href="/music">Music</Link>
+                    <Link href="/reviews">View Reviews</Link>
+                </div>
         </header>
         <main>
           <Component {...pageProps} />
