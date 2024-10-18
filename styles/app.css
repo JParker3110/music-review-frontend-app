@@ -51,5 +51,22 @@ body {
 }
 
 .star-rating .off .star {
-    color: grey;
+    color: black;
+}
+
+.music-item {
+    display: flex;
+    justify-content: space-between; /* Adjusts space between items */
+    align-items: center; /* Centers items vertically */
+    margin: 10px 0; /* Adds some space between items */
+}
+
+.music-info {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+}
+
+.song-title {
+    margin-right: 10px; /* Space between the title and stars */
+    font-size: 1.5em; /* Adjust font size as needed */
 }
