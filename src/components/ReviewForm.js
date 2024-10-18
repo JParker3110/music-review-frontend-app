@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 
 const ReviewForm = () => {
   const router = useRouter();
-  const { songLink, songTitle } = router.query; // Ensure these are defined
+  const { songLink, songTitle } = router.query;
   const [review, setReview] = useState('');
   const [rating, setRating] = useState(0);
 
@@ -30,7 +30,7 @@ const ReviewForm = () => {
 
       const data = await response.json();
       console.log('Review added:', data);
-      router.push('/'); // Redirect after submission
+      router.push('/'); // Redirect to home or music page after submitting
     } catch (error) {
       console.error('Error adding review:', error);
     }
@@ -38,7 +38,7 @@ const ReviewForm = () => {
 
   return (
     <div>
-      <h2>Add a Review for {songTitle || 'Loading...'}</h2>
+      <h2>Add a Review for {songTitle}</h2>
       <form onSubmit={handleSubmit}>
         <textarea
           value={review}
@@ -47,6 +47,8 @@ const ReviewForm = () => {
         />
         <button type="submit">Submit Review</button>
       </form>
+      <Link href="/">Back to Home</Link> {/* Add Back to Home link */}
+      <Link href="/music">Back to Music</Link> {/* Add Back to Music link */}
     </div>
   );
 };

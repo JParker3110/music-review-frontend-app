@@ -1,5 +1,6 @@
 import '/styles/app.css';
 import Link from 'next/link';
+
 function MyApp({ Component, pageProps }) {
     return (
       <div className="App">
@@ -7,6 +8,7 @@ function MyApp({ Component, pageProps }) {
           <h1>Niecey Music Review App</h1>
           <p>Listen to some of my favorite songs, rate and then share a review!</p>
           <Link href="/reviews">View Reviews</Link>
+          <Link href="/">Home</Link> {/* Add Home link */}
         </header>
         <main>
           <Component {...pageProps} />
@@ -16,6 +18,6 @@ function MyApp({ Component, pageProps }) {
         </footer>
       </div>
     );
-  }
-  
-  export default MyApp;
+}
+
+export default MyApp;
