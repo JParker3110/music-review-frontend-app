@@ -12,7 +12,7 @@ const Reviews = ({ reviews }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await fetch('http://localhost:4001/api/reviews/reviews');
+  const res = await fetch('http://localhost:4001/api/reviews');
   const reviews = await res.json();
 
   return { props: { reviews } };
