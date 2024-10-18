@@ -10,7 +10,6 @@ function MyApp({ Component, pageProps }) {
           <div className="navigation-buttons">
                     <Link href="/">Home</Link>
                     <Link href="/music">Music</Link>
-                    <Link href="/reviews">View Reviews</Link>
                 </div>
         </header>
         <main>
