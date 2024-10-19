@@ -7,8 +7,10 @@ function MyApp({ Component, pageProps }) {
         <header className="App-header">
           <h1>Niecey Music Review App</h1>
           <p>Listen to some of my favorite songs, rate and then share a review!</p>
-          <div className="navigation-buttons"></div>
-          <Link href="/">Back to Home</Link>
+          <div className="navigation-buttons">
+            <Link href="/">Home</Link> {/* Link to the homepage */}
+            <a href="http://localhost:4001" target="_blank" rel="noopener noreferrer">Go to Music (Backend)</a> {/* Change this URL to your backend URL */}
+          </div>
         </header>
         <main>
           <Component {...pageProps} />
