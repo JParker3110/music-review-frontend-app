@@ -30,7 +30,7 @@ const LeaveReview = () => {
 
       const data = await response.json();
       console.log('Review added:', data);
-      router.push('/'); // Redirect to home after submission
+      router.push('/'); 
     } catch (error) {
       console.error('Error adding review:', error);
     }
@@ -48,7 +48,7 @@ const LeaveReview = () => {
         />
         <button type="submit">Submit Review</button>
       </form>
-      <button onClick={() => router.push('/')}>Back to Home</button>
+      <button onClick={() => router.push('/')}>Back to Music</button>
     </div>
   );
 };
