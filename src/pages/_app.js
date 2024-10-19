@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
           <h1>Niecey Music Review App</h1>
           <p>Listen to some of my favorite songs, rate and then share a review!</p>
           <div className="navigation-buttons">
-            <Link href="http://localhost:4000" target="_blank" rel="noopener noreferrer">Home</Link>
+            <Link href="http://music-review-app.vercel.app" target="_blank" rel="noopener noreferrer">Home</Link>
           </div>
         </header>
         <main>
