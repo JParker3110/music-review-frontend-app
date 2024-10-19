@@ -16,8 +16,8 @@ const Home = ({ backendUrl }) => {
 
   return (
     <div>
-      <h1>Welcome to the Music Review App!</h1>
-      <h2>My Favorite Tracks</h2>
+      {/* <h1>Welcome to the Music Review App!</h1>
+      <h2>My Favorite Tracks</h2> */}
       {music.map((track) => (
         <Song key={track.id} link={track.link} title={track.title} />
       ))}
