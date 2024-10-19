@@ -8,8 +8,8 @@ function MyApp({ Component, pageProps }) {
           <h1>Niecey Music Review App</h1>
           <p>Listen to some of my favorite songs, rate and then share a review!</p>
           <div className="navigation-buttons">
-                     <Link href="/music">Music</Link>
-                </div>
+            <Link href="http://localhost:4000" target="_blank" rel="noopener noreferrer">Go to Backend</Link>
+          </div>
         </header>
         <main>
           <Component {...pageProps} />
