@@ -26,3 +26,20 @@
 // };
 
 // export default Home;
+
+
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+
+const Home = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Redirect to the music page
+    router.push('/music');
+  }, [router]);
+
+  return null; // No content to render since we're redirecting
+};
+
+export default Home;
