@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Spotify } from 'react-spotify-embed';
 import StarRating from '../components/StarRating';
-import '/styles/app.css'; // Ensure you import the CSS if using a separate file
+import '/styles/app.css'; 
 
 const Song = ({ link, title }) => {
   const router = useRouter();

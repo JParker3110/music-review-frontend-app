@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-const ReviewList = ({ reviews = [] }) => { // Default to an empty array
+const ReviewList = ({ reviews = [] }) => { 
   return (
     <div>
       <h2>Review List</h2>

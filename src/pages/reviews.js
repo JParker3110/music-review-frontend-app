@@ -1,4 +1,3 @@
-// pages/reviews.js
 import React from 'react';
 import ReviewList from '../components/ReviewList';
 

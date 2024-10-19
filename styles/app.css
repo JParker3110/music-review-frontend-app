@@ -56,17 +56,17 @@ body {
 
 .music-item {
     display: flex;
-    justify-content: space-between; /* Adjusts space between items */
-    align-items: center; /* Centers items vertically */
-    margin: 10px 0; /* Adds some space between items */
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 10px 0; 
 }
 
 .music-info {
     display: flex;
-    align-items: center; /* Centers items vertically */
+    align-items: center; 
 }
 
 .song-title {
-    margin-right: 10px; /* Space between the title and stars */
-    font-size: 1.5em; /* Adjust font size as needed */
+    margin-right: 10px;
+    font-size: 1.5em; 
 }

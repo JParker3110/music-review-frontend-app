@@ -31,7 +31,7 @@ const ReviewForm = () => {
 
       const data = await response.json();
       console.log('Review added:', data);
-      router.push('/'); // Redirect to home or music page after submitting
+      router.push('/'); 
     } catch (error) {
       console.error('Error adding review:', error);
     }
