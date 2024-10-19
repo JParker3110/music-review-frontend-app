@@ -5,15 +5,10 @@ import Song from '../components/Song';
 const MusicPage = () => {
   const [songs, setSongs] = useState([]);
 
-  // Determine the base URL for API calls
-  const baseUrl = process.env.NODE_ENV === 'production'
-    ? 'https://music-review-app.vercel.app'
-    : 'http://localhost:4001'; // Adjust if your backend runs on a different port
-
   useEffect(() => {
     const fetchSongs = async () => {
       try {
-        const response = await axios.get(`${baseUrl}/api/music`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/music`);
         setSongs(response.data);
       } catch (error) {
         console.error('Error fetching music data:', error);
